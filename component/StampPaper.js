@@ -41,14 +41,14 @@ export default function StampPaper(params) {
 
         return (
             <>
-                <button type="button" onClick={() => setStampNum({ id })}>
+                <button type="button">
                     {id} / {date}
                 </button>
 
                 <style jsx>{`
                     button {
-                        color: {color};
-                        background-color: {background};
+                        color: ${color};
+                        background-color: ${background};
                     }
                 `}</style>
             </>

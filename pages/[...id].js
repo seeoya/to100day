@@ -10,6 +10,7 @@ export default function StampPage({ id }) {
     const userId = router.query.id || id || "id";
 
     const [stampNum, setStampNum] = useState(0);
+    let [MSwitch, setMSwitch] = useState(true);
 
     return (
         <div className="content">
@@ -17,14 +18,20 @@ export default function StampPage({ id }) {
                 <StampPaper num="100" count="30"></StampPaper>
             </div>
 
-            <Modal id={id} num={stampNum}>
-                <h2>{userId} 스탬프 페이지 {stampNum}</h2>
+            {MSwitch ? (
+                <Modal id={id} num={stampNum}>
+                    <h2>
+                        {userId} 스탬프 페이지 {stampNum}
+                    </h2>
 
-                <Write></Write>
-                <List></List>
-            </Modal>
+                    <Write></Write>
+                    <List></List>
+                </Modal>
+            ) : (
+                ""
+            )}
 
-            <style jsx>{`
+            <style jsx global>{`
                 .content {
                 }
 
