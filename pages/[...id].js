@@ -2,7 +2,6 @@ import { useRouter } from "next/router";
 import StampPaper from "/component/StampPaper";
 import Write from "/component/Write";
 import List from "/component/List";
-import Modal from "../component/Modal";
 import { useState } from "react";
 
 export default function StampPage({ id }) {
@@ -10,29 +9,24 @@ export default function StampPage({ id }) {
     const userId = router.query.id || id || "id";
 
     const [stampNum, setStampNum] = useState(0);
-    let [MSwitch, setMSwitch] = useState(true);
 
     return (
         <div className="content">
             <div className="stamp">
+                <h2>
+                    {userId} 스탬프 페이지 {stampNum}
+                </h2>
                 <StampPaper num="100" count="30"></StampPaper>
             </div>
 
-            {MSwitch ? (
-                <Modal id={id} num={stampNum}>
-                    <h2>
-                        {userId} 스탬프 페이지 {stampNum}
-                    </h2>
-
-                    <Write></Write>
-                    <List></List>
-                </Modal>
-            ) : (
-                ""
-            )}
+            <div className="text">
+                <Write></Write>
+                <List></List>
+            </div>
 
             <style jsx global>{`
                 .content {
+                    display: flex;
                 }
 
                 .content > div {
@@ -40,8 +34,15 @@ export default function StampPage({ id }) {
                 }
 
                 .stamp {
-                    width: 100%;
+                    width: 30%;
+                    height: 100%;
                     background-color: #ede;
+                }
+
+                .text {
+                    width: 70%;
+                    height: 100%;
+                    background-color: #eed;
                 }
             `}</style>
         </div>

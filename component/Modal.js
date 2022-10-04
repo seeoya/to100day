@@ -3,11 +3,22 @@ import { useState } from "react";
 export default function Modal({ children }, params) {
     let { id, num } = params;
 
+    const closeModal = () => {
+        document.querySelectorAll(".modal")[0].style.display = "none";
+    };
+
     return (
         <div className="modal">
             <div className="modal-wrap">
                 <div className="modal-btns">
-                    <button type="button">닫기</button>
+                    <button
+                        type="button"
+                        onClick={() => {
+                            closeModal();
+                        }}
+                    >
+                        닫기
+                    </button>
                 </div>
 
                 <div className="modal-content">{children}</div>
@@ -15,7 +26,7 @@ export default function Modal({ children }, params) {
 
             <style jsx>{`
                 .modal {
-                    display: flex;
+                    display: none;
                     position: fixed;
                     top: 0;
                     right: 0;

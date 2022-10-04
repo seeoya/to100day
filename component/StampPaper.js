@@ -5,12 +5,12 @@ export default function StampPaper(params) {
         {
             id: "0",
             color: "#ff3",
-            background: "#fefe",
+            background: "#000",
             date: "220923"
         },
         {
             id: "1",
-            color: "#f0f",
+            color: "#fff",
             background: "#f3e",
             date: "220924"
         },
@@ -49,6 +49,14 @@ export default function StampPaper(params) {
                     button {
                         color: ${color};
                         background-color: ${background};
+                        width: 50px;
+                        height: 50px;
+                        border: 0px solid ${color};
+                        border-radius: 100px;
+                    }
+
+                    button:hover {
+                        border: 1px solid ${color};
                     }
                 `}</style>
             </>
