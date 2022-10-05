@@ -1,26 +1,12 @@
+import { useSelector, useDispatch } from "react-redux";
+
 export default function StampPaper(params) {
     let { num, count } = params;
 
-    let list = [
-        {
-            id: "0",
-            color: "#ff3",
-            background: "#000",
-            date: "220923"
-        },
-        {
-            id: "1",
-            color: "#fff",
-            background: "#f3e",
-            date: "220924"
-        },
-        {
-            id: "2",
-            color: "#777",
-            background: "#00f",
-            date: "220925"
-        }
-    ];
+    let state = useSelector((state) => {
+        return state;
+    });
+    let dispatch = useDispatch();
 
     return (
         <div>
@@ -28,29 +14,43 @@ export default function StampPaper(params) {
                 {count}/{num}
             </p>
 
-            <div>
-                {list.map((el) => {
-                    return <Stamp id={el.id} color={el.color} background={el.background} date={el.date} />;
+            <div className="stamp-list">
+                {state.itemsState.map((item) => {
+                    console.log(item);
+                    return <Stamp item={item} />;
                 })}
             </div>
+
+            <style jsx>{`
+                .stamp-list {
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    flex-flow: wrap;
+                    gap: 10px;
+                }
+            `}</style>
         </div>
     );
 
-    function Stamp(params) {
-        let { id, color, background, date } = params;
+    function Stamp(props) {
+        let { no, title, date, content, color, background } = props.item;
+
+        color = color ?? "#fff";
+        background = background ?? "pink";
 
         return (
             <>
                 <button type="button">
-                    {id} / {date}
+                    {no} / {date}
                 </button>
 
                 <style jsx>{`
                     button {
                         color: ${color};
                         background-color: ${background};
-                        width: 50px;
-                        height: 50px;
+                        width: 55px;
+                        height: 55px;
                         border: 0px solid ${color};
                         border-radius: 100px;
                     }
