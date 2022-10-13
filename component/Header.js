@@ -10,10 +10,10 @@ export default function Header() {
             <div className="title">뭐라도 해라 D-100</div>
             <nav>
                 <div>
-                    <NavLink id="silent0rch" title="유랑" />
-                    <NavLink id="silent1rch" title="유1랑" />
-                    <NavLink id="silent2rch" title="유2랑" />
-                    <NavLink id="silent3rch" title="유3랑" />
+                    <NavLink id="id1" title="아이디1" />
+                    <NavLink id="id2" title="아이디2" />
+                    <NavLink id="id3" title="아이디3" />
+                    <NavLink id="id4" title="아이디4" />
                 </div>
             </nav>
             <style jsx>{`
