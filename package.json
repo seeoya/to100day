@@ -2,7 +2,6 @@
     "name": "to100day",
     "version": "0.1.0",
     "private": true,
-    "homepage": "https://seeoya.github.io/to100days",
     "scripts": {
         "dev": "next dev",
         "build": "next build&&next export",

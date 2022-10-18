@@ -14,12 +14,13 @@ export default function StampPage({ id }) {
         <div className="content">
             <div className="stamp">
                 <h2>
-                    {userId} 스탬프 페이지 {stampNum}
+                    {userId} 스탬프 페1이지 {stampNum}
                 </h2>
                 <StampPaper num="100" count="30"></StampPaper>
             </div>
 
             <div className="text">
+                <img src="aurora.jpg" alt="오로라" />
                 <Write></Write>
                 <List></List>
             </div>
@@ -43,6 +44,12 @@ export default function StampPage({ id }) {
                     width: 70%;
                     height: 100%;
                     background-color: #eed;
+                }
+
+                img {
+                    width: 100%;
+                    height: 300px;
+                    object-fit: cover;
                 }
             `}</style>
         </div>
