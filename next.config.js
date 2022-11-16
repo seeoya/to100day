@@ -2,7 +2,7 @@
 const nextConfig = {
     reactStrictMode: true,
     swcMinify: true,
-    assetPrefix: "/to100day",
+    // assetPrefix: "/to100day",
     // env: {}
     
 };
