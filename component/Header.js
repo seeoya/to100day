@@ -51,7 +51,7 @@ export default function Header() {
         }
 
         return (
-            <Link href={param.id}>
+            <Link href={`/${param.id}`}>
                 <a className={active}>
                     {param.id} = {param.title}
                 </a>
