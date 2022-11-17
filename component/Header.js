@@ -8,7 +8,7 @@ export default function Header() {
     return (
         <header>
             <Link href="/">
-                <a className="title">체크리스트 100</a>
+                <a className="mymy title w-full">체크리스트 100</a>
             </Link>
             <nav>
                 <div>
