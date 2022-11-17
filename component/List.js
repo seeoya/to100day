@@ -25,7 +25,7 @@ function Item(props) {
             <h3>{item.title}</h3>
             <div>{item.content}</div>
 
-            <style jsx>{`
+            {/* <style jsx>{`
                 h2 {
                     color: red;
                 }
@@ -38,7 +38,7 @@ function Item(props) {
                     background-color: #fff;
                 }
                 
-                `}</style>
+                `}</style> */}
         </div>
     );
 }

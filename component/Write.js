@@ -32,13 +32,13 @@ export default function Write() {
                 </button>
             </form>
 
-            <style jsx>{`
+            {/* <style jsx>{`
                 textarea {
                     width: 100%;
                     min-width: 100%;
                     max-width: 100%;
                 }
-            `}</style>
+            `}</style> */}
         </div>
     );
 }

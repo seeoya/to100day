@@ -21,7 +21,7 @@ export default function StampPaper(params) {
                 })}
             </div>
 
-            <style jsx>{`
+            {/* <style jsx>{`
                 .stamp-list {
                     display: flex;
                     align-items: center;
@@ -29,7 +29,7 @@ export default function StampPaper(params) {
                     flex-flow: wrap;
                     gap: 10px;
                 }
-            `}</style>
+            `}</style> */}
         </div>
     );
 
@@ -45,7 +45,7 @@ export default function StampPaper(params) {
                     {no} / {date}
                 </button>
 
-                <style jsx>{`
+                {/* <style jsx>{`
                     button {
                         color: ${color};
                         background-color: ${background};
@@ -58,7 +58,7 @@ export default function StampPaper(params) {
                     button:hover {
                         border: 1px solid ${color};
                     }
-                `}</style>
+                `}</style> */}
             </>
         );
     }

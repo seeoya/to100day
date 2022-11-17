@@ -19,13 +19,12 @@ export default function StampPage({ id }) {
                 <StampPaper num="100" count="30"></StampPaper>
             </div>
 
-            <div className="text">
-                <img src="aurora.jpg" alt="오로라" />
-                <Write></Write>
-                <List></List>
-            </div>
+            {/* <div className="text"> */}
+                {/* <Write></Write> */}
+                {/* <List></List> */}
+            {/* </div> */}
 
-            <style jsx global>{`
+            {/* <style jsx global>{`
                 .content {
                     display: flex;
                 }
@@ -51,7 +50,7 @@ export default function StampPage({ id }) {
                     height: 300px;
                     object-fit: cover;
                 }
-            `}</style>
+            `}</style> */}
         </div>
     );
 }

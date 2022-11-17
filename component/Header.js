@@ -7,7 +7,9 @@ export default function Header() {
 
     return (
         <header>
-            <div className="title">뭐라도 해라 D-100</div>
+            <Link href="/">
+                <a className="title">체크리스트 100</a>
+            </Link>
             <nav>
                 <div>
                     <NavLink id="id1" title="아이디1" />
@@ -16,7 +18,7 @@ export default function Header() {
                     <NavLink id="id4" title="아이디4" />
                 </div>
             </nav>
-            <style jsx>{`
+            {/* <style jsx>{`
                 header {
                     width: 100%;
                     background-color: #eee;
@@ -39,20 +41,14 @@ export default function Header() {
                 .active {
                     color: red;
                 }
-            `}</style>
+            `}</style> */}
         </header>
     );
 
     function NavLink(param) {
-        let active = "";
-
-        if (param.id == id) {
-            active = "active";
-        }
-
         return (
             <Link href={`/${param.id}`}>
-                <a className={active}>
+                <a className={param.id == id ? "text-xl" : ""}>
                     {param.id} = {param.title}
                 </a>
             </Link>

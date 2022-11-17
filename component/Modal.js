@@ -24,7 +24,7 @@ export default function Modal({ children }, params) {
                 <div className="modal-content">{children}</div>
             </div>
 
-            <style jsx>{`
+            {/* <style jsx>{`
                 .modal {
                     display: none;
                     position: fixed;
@@ -63,7 +63,7 @@ export default function Modal({ children }, params) {
                 .modal-content {
                     width: 100%;
                 }
-            `}</style>
+            `}</style> */}
         </div>
     );
 }
