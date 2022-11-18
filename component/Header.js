@@ -16,6 +16,7 @@ export default function Header() {
                     <NavLink id="id2" title="아이디2" />
                     <NavLink id="id3" title="아이디3" />
                     <NavLink id="id4" title="아이디4" />
+                    <NavLink id="style" title="스타일테스트" />
                 </div>
             </nav>
             {/* <style jsx>{`
