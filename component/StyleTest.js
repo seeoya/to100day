@@ -78,26 +78,17 @@ function StyleTest() {
             </StyleLayout>
 
             <StyleLayout title="스피너">
-                <div className="inline-flex mr-32 w-20 h-20 bg-transparent rounded-full border-8 border-rose-500 border-y-blue-500 animate-spin"></div>
+                <div className="inline-flex w-20 h-20 bg-transparent rounded-full border-8 border-rose-500 border-y-blue-500 animate-spin"></div>
                 스핀
-                <div className="inline-flex mr-32 w-20 h-20 bg-transparent rounded-full border-8 border-amber-500 border-y-indigo-700 animate-ping"></div>핑<div className="inline-flex mr-32 w-20 h-20 bg-transparent rounded-full border-8 border-teal-400 border-y-violet-500 animate-pulse"></div>
+                <div className="inline-flex w-20 h-20 bg-transparent rounded-full border-8 border-amber-500 border-y-indigo-700 animate-ping"></div>
+                핑~
+                <div className="inline-flex w-20 h-20 bg-transparent rounded-full border-8 border-teal-400 border-y-violet-500 animate-pulse"></div>
                 펄스
-                <div className="inline-flex mr-32 w-20 h-20 bg-transparent rounded-full border-8 border-lime-300 border-y-neutral-800 animate-bounce"></div>
+                <div className="inline-flex w-20 h-20 bg-transparent rounded-full border-8 border-lime-300 border-y-neutral-800 animate-bounce"></div>
                 바운스
             </StyleLayout>
 
-            <StyleLayout title="셀렉션">
-                <div className="selection:bg-lime-100">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tellus ex, iaculis id ex eget, consequat tincidunt libero. Aliquam erat volutpat. Etiam pharetra vehicula malesuada. Donec orci tellus, scelerisque imperdiet euismod in, dapibus et libero. Vestibulum mi massa, semper sit amet eros vitae, molestie molestie eros. Donec quis velit accumsan, interdum quam ut, finibus
-                    mi. Maecenas maximus maximus mi, quis placerat nulla rutrum quis. Proin scelerisque hendrerit nisl quis tempor. Sed suscipit dolor vel turpis iaculis, non pharetra sapien semper. In hac habitasse platea dictumst. Praesent finibus diam et dolor luctus, a iaculis erat tincidunt. Phasellus magna massa, lacinia in ipsum eu, scelerisque bibendum sapien. Suspendisse sit amet maximus
-                    purus.
-                </div>
-                <div className="selection:bg-rose-200">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tellus ex, iaculis id ex eget, consequat tincidunt libero. Aliquam erat volutpat. Etiam pharetra vehicula malesuada. Donec orci tellus, scelerisque imperdiet euismod in, dapibus et libero. Vestibulum mi massa, semper sit amet eros vitae, molestie molestie eros. Donec quis velit accumsan, interdum quam ut, finibus
-                    mi. Maecenas maximus maximus mi, quis placerat nulla rutrum quis. Proin scelerisque hendrerit nisl quis tempor. Sed suscipit dolor vel turpis iaculis, non pharetra sapien semper. In hac habitasse platea dictumst. Praesent finibus diam et dolor luctus, a iaculis erat tincidunt. Phasellus magna massa, lacinia in ipsum eu, scelerisque bibendum sapien. Suspendisse sit amet maximus
-                    purus.
-                </div>
-            </StyleLayout>
+            <StyleLayout title=""></StyleLayout>
 
             <StyleLayout title=""></StyleLayout>
         </div>
