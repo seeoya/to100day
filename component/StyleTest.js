@@ -63,14 +63,14 @@ function StyleTest() {
 
             <StyleLayout title="다크모드">
                 <button
-                    className="p-3 bg-slate-800 text-white"
+                    className="p-3 bg-slate-700 text-white"
                     onClick={() => {
                         setDarkMode(!darkMode);
                     }}
                 >
                     모드 전환
                 </button>
-                <div className="p-10 m-5 leading-loose bg-rose-100 dark:bg-slate-900 rounded-3xl text-slate-900 dark:text-slate-50">
+                <div className="p-10 m-5 leading-loose bg-rose-100 dark:bg-slate-800 rounded-3xl text-slate-900 dark:text-slate-50">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in nulla hendrerit, tempor metus cursus, rutrum magna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed scelerisque a odio a tincidunt. Sed eget ligula sit amet turpis facilisis molestie eu eu risus. Proin sit amet est ac augue gravida blandit. Integer semper
                     placerat fringilla. Curabitur mauris libero, pretium non venenatis et, aliquam vel mauris. Phasellus ac rutrum leo. Nullam placerat semper ultrices. Duis congue nunc et nunc aliquet, et gravida turpis facilisis. Nulla id tempus quam, eget posuere turpis. In hendrerit arcu velit, in scelerisque orci ultricies nec. Donec neque diam, lobortis nec velit eu, lacinia dapibus metus.
                     Phasellus sollicitudin risus id enim iaculis vestibulum eget sit amet eros. Vestibulum quis tempor magna.
@@ -86,6 +86,23 @@ function StyleTest() {
                 펄스
                 <div className="inline-flex w-20 h-20 bg-transparent rounded-full border-8 border-lime-300 border-y-neutral-800 animate-bounce"></div>
                 바운스
+            </StyleLayout>
+
+            <StyleLayout title="임의의 값">
+                <div className="w-[887px] h-[200px] text-[#fff00f] bg-pink-300 ">가로세로색상까지도 임의의 값 넣기</div>
+            </StyleLayout>
+
+            <StyleLayout title="링">
+                <button className="border-4 ring-2 ring-offset-2 focus:ring-offset-8 hover:ring-4">링?</button>
+            </StyleLayout>
+
+            <StyleLayout title="아이템들">
+                <div className="flex justify-between">
+                    <div className="w-20 h-20 bg-red-400 even:bg-green-800 odd:bg-teal-600 first:bg-yellow-500 last:bg-red-400 last:rotate-45"></div>
+                    <div className="w-20 h-20 bg-red-400 even:bg-green-800 odd:bg-teal-600 first:bg-yellow-500 last:bg-red-400 last:rotate-45"></div>
+                    <div className="w-20 h-20 bg-red-400 even:bg-green-800 odd:bg-teal-600 first:bg-yellow-500 last:bg-red-400 last:rotate-45"></div>
+                    <div className="w-20 h-20 bg-red-400 even:bg-green-800 odd:bg-teal-600 first:bg-yellow-500 last:bg-red-400 last:rotate-45"></div>
+                </div>
             </StyleLayout>
 
             <StyleLayout title=""></StyleLayout>
