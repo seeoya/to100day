@@ -18,39 +18,6 @@ export default function StampPage({ id }) {
                 </h2>
                 <StampPaper num="100" count="30"></StampPaper>
             </div>
-
-            {/* <div className="text"> */}
-                {/* <Write></Write> */}
-                {/* <List></List> */}
-            {/* </div> */}
-
-            {/* <style jsx global>{`
-                .content {
-                    display: flex;
-                }
-
-                .content > div {
-                    padding: 30px;
-                }
-
-                .stamp {
-                    width: 30%;
-                    height: 100%;
-                    background-color: #ede;
-                }
-
-                .text {
-                    width: 70%;
-                    height: 100%;
-                    background-color: #eed;
-                }
-
-                img {
-                    width: 100%;
-                    height: 300px;
-                    object-fit: cover;
-                }
-            `}</style> */}
         </div>
     );
 }
